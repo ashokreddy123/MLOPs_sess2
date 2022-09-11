@@ -1,0 +1,11 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: cifar10.yaml
+  - override /model: cifar10_timm_model.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+

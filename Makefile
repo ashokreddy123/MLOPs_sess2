@@ -40,3 +40,6 @@ debug: ## Enter debugging mode with pdb
 	# - docs: https://docs.python.org/3/library/pdb.html
 	#
 	python -m pdb src/train.py debug=default
+build:
+	@echo Build docker image...
+	@docker build -f Dockerfile --tag sess_2 .
