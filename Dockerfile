@@ -1,5 +1,5 @@
 # our base image
-FROM python:3.7.10
+FROM python:3.7
 
 
 # set working directory inside the image
